@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+}
+#card:hover {
+  background-color: #00838f;
+  color: white;
+}
+#viewmore {
+  background-color: #00838f;
+  color:whitesmoke;
+}
+#viewmore:hover {
+  background-color: whitesmoke;
+  color:#00838f;
+  border: 2px solid #00838f;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+  padding: 15px;
+  justify-content: space-evenly;
+  
+
+}
+
+.pagination a{
+  background-color: transparent;
+  font-size: 20px;
+  padding: 15px;
+  color: black;
+  border: 2px solid #333;
+  text-decoration: none;
+
+}
+.pagination a:hover{
+  background-color: #00838f;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  border: 2px solid #00838f;
+  text-decoration: none;
+
+}
+.pagination span{
+  font-size: 20px;
+
+}
+.faqi {
+  padding: 30px;
+  text-align: center;
+}
+.faq {
+  width:800px;
+  margin: 0 auto;
+  padding: auto;
+  height: 100%;
+  padding-top: 50px;
+}
+.faq-qa{
+  background-color: #00838f;;
+  border: 3px solid white;
+  color: white;
+  padding: 15px;
+  
+
+}
+.faqp {
+  text-decoration: overline;
+  text-decoration-color: white;
+}
+#Footerid {
+  background-color: #02727c;
+}
+#Navid {
+  background-color: #00838f;
+}
+#Searchid {
+  width:800px;
+  height: 35px;
+}
+#textcolor {
+  color: #00838f;
+}
+#backgroundC {
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
