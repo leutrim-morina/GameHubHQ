@@ -3,29 +3,22 @@ import { useParams } from 'react-router-dom';
 import { GameContext } from '../GameContext';
 import Footer from './Footer';
 
-function GameDetails({ setGame }) {
+function GameDetails() {
   const { id } = useParams();
   const gameData = useContext(GameContext);
   const [game, setGameData] = useState(true);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     const selectedGame = gameData.find((game) => game.id === parseInt(id));
     if (selectedGame) {
       setGameData(selectedGame);
     }
-    setLoading(false);
+    
   }, [gameData, id]);
-
-  if (loading) {
-    return <div className="spinner-border text-primary" role="status"><span className="sr-only">Loading...</span> </div>;
-  }
-
 
   return (
     <>
-    <div className="row p-4 m-4">
+    <div className="row p-5 m-5">
     <div className="col-md-12 card h-100 " id="backgroundC">
       <h1 className="card-title text-center pb-4">{game.name}</h1>
       <img
