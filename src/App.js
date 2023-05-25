@@ -48,7 +48,7 @@ function App() {
   const handleSearch = (str) => {
     setSearch(str);
   };
-
+  
   return (
     <div className="content">
       <BrowserRouter>
@@ -57,7 +57,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games page={page} setPage={setPage} handleSearch={handleSearch} />} />
-            <Route path="/games/:id" element={<GameDetails game={game} />} />
+            <Route path="/games/:id" element={<GameDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="*" element={<NotFound />} />
